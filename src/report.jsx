@@ -23,7 +23,7 @@ export default class report extends Component {
     if(this.state.zipcode.lenght < 5){
       return false
     }
-    
+
     try {
       await axios
         .get(`${BASE_URL}/${this.state.zipcode}`)
@@ -64,7 +64,7 @@ export default class report extends Component {
       <div>
         <Navbar bg="primary" variant="dark">
           <Container>
-            <Navbar.Brand href="#">ค้นหาเลขไปรษณีย์</Navbar.Brand>
+            <Navbar.Brand href="#">ค้นหาเลขไปรษณีย์ เปลี่ยนแปลง</Navbar.Brand>
             <div style={{fontSize:"20px",color:"#ffffff"}}>
               65130138 อัญชนา ศรีจำนง
             </div>
