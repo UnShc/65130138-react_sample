@@ -9,6 +9,7 @@ import Card from "react-bootstrap/Card";
 import Table from "react-bootstrap/Table";
 import axios from "axios";
 import Common from "./common";
+import Image from 'react-bootstrap/Image'
 const BASE_URL = Common.API_URL;
 export default class report extends Component {
   state = {
@@ -64,9 +65,10 @@ export default class report extends Component {
       <div>
         <Navbar bg="primary" variant="dark">
           <Container>
-            <Navbar.Brand href="#">ค้นหาเลขไปรษณีย์ เปลี่ยนแปลง</Navbar.Brand>
+            <Navbar.Brand href="#">ค้นหาเลขไปรษณีย์</Navbar.Brand>
             <div style={{fontSize:"20px",color:"#ffffff"}}>
-              65130138 อัญชนา ศรีจำนง
+              <Image src="https://cdn-icons-png.flaticon.com/512/1053/1053244.png" roundedCircle thumbnail style={{width:"40px",height:"40px"}}/>
+             {" "} 65130138 อัญชนา ศรีจำนง
             </div>
           </Container>
         </Navbar>
